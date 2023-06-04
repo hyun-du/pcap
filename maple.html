@@ -1,0 +1,1154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="새로운 개념의 멀티유저 온라인게임 maplestory">
+    <meta name="google-site-verification" content="OcUfX8Czn819CkCyhhvEaC0zGZCSyoGPgmk70ORTptI" />
+    <meta property="og:description" content="새로운 개념의 멀티유저 온라인게임 maplestory">
+    <meta name="keywords" content="maple, maplestory, 메이플, 메이플스토리, wizet, 위젯, 2d, 횡스크롤, 사이드스크롤, rpg, mmorpg, 온라인게임,이벤트,신규직업">
+    <meta name="author" content="NEXON Korea" />
+    <title>메이플스토리</title>
+    <link rel="stylesheet" href="https://lwres.nexon.com/css/maplestory/index.css" type="text/css" />
+    <link rel="stylesheet" href="https://lwres.nexon.com/css/maplestory/jquery.mCustomScrollbar.css" type="text/css" />
+
+    <script src="https://ssl.nexon.com/s1/p2/ps.min.js" charset="utf-8" data-name="PS" data-ngm="true" data-nxlogin="true"></script>
+
+    <script src="https://ssl.nexon.com/s1/global/ngb_head.js"></script>
+
+    <script src="https://lwres.nexon.com/js/maplestory/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="https://lwres.nexon.com/js/maplestory/jquery-ui.js"></script>
+    <script src="https://lwres.nexon.com/js/maplestory/index.js" type="text/javascript"></script>
+    <script src="https://lwres.nexon.com/js/maplestory/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    
+
+<script src="/Scripts/Common/common.js?v=202306010935"></script>
+<script src="/Scripts/Common/webboard.js"></script>
+
+<script>
+    var COMMON = (function () {
+        var instance;
+
+        function initiate() {
+            return {
+                site: 'nope',
+                domain: 'maplestory.nexon.com',
+                url: 'https://maplestory.nexon.com/Home/Main',
+                oid: '0',
+                isLogin: false,
+                isMembership: false,
+                isParentLogin: false,
+                isParentMembershipLogin: false,
+                isChannelingNotAgree: false,
+                articleSearchDescriptor: {},
+                maxTitleLength: 0,
+                maxCommentLength: 0
+            };
+        }
+
+        if (!instance) instance = initiate();
+        return instance;
+    }());
+
+    $(window).load(function () {
+        var commonMessage = '';
+        if (commonMessage !== '')
+            alert(commonMessage);
+    });
+</script>
+
+
+
+<link rel="stylesheet" href="/Scripts/Common/font_NanumBarunGothic.css" type="text/css" />
+<!-- Facebook Pixel Code -->
+<script type="text/javascript">    
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        }; if (!f._fbq) f._fbq = n;
+        n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+     fbq('init', '268046720223120');
+    fbq('track', "PageView");
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=268046720223120&ev=PageView&noscript=1" /></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Twitter single-event website tag code -->
+<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">twttr.conversion.trackPid('nx5i7', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+<noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nx5i7&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nx5i7&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+</noscript>
+<!-- End Twitter single-event website tag code -->
+<script type="text/javascript">
+    (function (m, o, n, r, t, g) {
+        t = t + '?l=' + n + '&t=' + r + '&ref=' + encodeURIComponent(o.referrer) + '&loc=' + encodeURIComponent(o.location) + '&r=' + Math.floor(Math.random() * 99999999999);
+        o.write("<" + g + " src='" + t + "' style='display:none;'></" + g + ">");
+    })(window, document, 'CM_M_1042938', 'brand', 'https://rtb.clickmon.co.kr/RT_GATE/rt_gate.php', 'iframe');
+</script>
+
+        <!-- Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src=https://www.googletagmanager.com/gtag/js?id=UA-34233427-4></script>
+        <script async src=https://www.googletagmanager.com/gtag/js?id=AW-947932633></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-34233427-4', { 'custom_map': { 'dimension1': 'oid' } });
+            gtag('config', 'G-12M3M6FCC2');
+            gtag('event', 'oid', { 'oid': 0 })
+            gtag('config', 'AW-947932633');
+            gtag('event', 'conversion', { 'send_to': 'AW-947932633/0AANCOGi_IkCENmbgcQD' });
+            function gtag_report_conversion(url) {
+                var callback = function () {
+                    if (typeof (url) != 'undefined') {
+                        window.location = url;
+                    }
+                };
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-947932633/DKSpCOK-_IkCENmbgcQD',
+                    'event_callback': callback
+                });
+                return false;
+            }
+        </script>
+        <!-- End Google Analytics -->
+<!-- Kakao Pixel Code -->
+<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script>
+<script type="text/javascript">
+    kakaoPixel('2830029952607077079').pageView();
+</script>
+<!-- End Kakao Pixel Code -->
+<!-- Criteo 홈페이지 태그 -->
+<script type="text/javascript" src="//dynamic.criteo.com/js/ld/ld.js?a=94120" async="true"></script>
+<script type="text/javascript">
+    window.criteo_q = window.criteo_q || [];
+    var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
+    window.criteo_q.push({ event: "setAccount", account: [94120, 95207] }, { event: "setSiteType", type: deviceType }, { event: "viewHome" });
+
+    function gameStart_Criteo() {
+        window.criteo_q.push(
+            { event: "setAccount", account: [94120, 95207] },
+            { event: "setSiteType", type: deviceType },            
+            {
+                event: "trackTransaction", id: Math.floor(Math.random() * 99999999999), item: [
+                    { id: "gameStart", price: 1, quantity: 1 }                    
+                ]
+            }
+        );
+    }
+</script>
+<!-- END Criteo 홈페이지 태그 -->
+
+
+
+
+    <script src="/Scripts/Common/index_event.js?v=202306010935"></script>
+</head>
+<body>
+
+
+    <script type="text/javascript" src="https://rs.nxfs.nexon.com/common/js/gnb.min.js" data-gamecode="589824" data-ispublicbanner="true"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.sel_login_btn a:eq(0)').bind('click', function (e) {
+            e.preventDefault();
+            LOGIN.changeID();
+        });
+        $('.sel_login_btn a:eq(1)').bind('click', function (e) {
+            e.preventDefault();
+            close_login_pop();
+        });
+    });
+</script>
+<div class="login_popup_wrap">
+    <div class="login_popup2">
+        <h1><span><a href="javascript:void(0)"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/login_pop_h1.png" alt="다른 메이플ID로 로그인" /></a></span></h1>
+        <div class="login_popup_con">
+            <p>다른 메이플ID로 로그인 하시려면 아래의 ID중 하나를 선택하시기 바랍니다.</p>
+            <div class="sel_login_id">
+            </div>
+            <div class="bnarea">
+                <p class="icoinfo">
+                    <input type="checkbox" name="chkMaster" /> <label for="che">앞으로 이 메이플ID로 로그인 하겠습니다.</label>
+                </p>
+            </div>
+            <div class="sel_login_btn">
+                <a href="#a"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/sel_login_btn.png" alt="선택한 메이플ID로 로그인" /></a>
+                <a href="#a"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/rank_pop_close_btn.png" alt="닫기" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div id="wrap">
+        <div id="section01">
+<div class="top_menu_wrap">
+    <div class="div_inner">
+<h1 class="logo"><a href="/Home/Main"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/logo.png" alt="" /></a></h1>
+
+<ul class="top_menu">
+    <li>
+        <a href="/News/Notice">뉴스</a>
+        <ul>
+            <li><a href="/News/Notice">공지사항</a></li>
+            <li><a href="/News/Update">업데이트</a></li>
+            <li><a href="/News/Event">이벤트</a></li>
+            <li><a href="/News/CashShop">캐시샵 공지</a></li>
+            
+            <li><a href="/News/NoticeMapleBoard">메이플 알림판</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="/Guide/N23GameInformation">가이드</a>
+        <ul>
+            <li><a href="/Guide/N23GameInformation">게임정보</a></li>
+            
+            <li><a href="/Guide/Quest">퀘스트정보</a></li>
+            <li><a href="/Guide/N23Job">직업소개</a></li>
+            
+            <li><a href="/Guide/CashShop/Probability/RoyalStyle">확률형 아이템</a></li>
+            <li><a href="/Guide/ProbabilityResult/MonthData">확률형 아이템 결과</a></li>
+            <li><a href="https://now.nexon.com/service/maplestory" target="_blank">NEXON NOW<span class="icon_window"></span></a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="/N23Ranking/World">랭킹</a>
+        <ul>
+            <li><a href="/N23Ranking/World">월드 랭킹</a></li>
+            <li><a href="/N23Ranking/Contents">컨텐츠 랭킹</a></li>
+            
+        </ul>
+    </li>
+    <li>
+        
+        <a href="/Community/N23Free">커뮤니티</a>
+        <ul>
+            
+            <li><a href="/Community/N23Free">자유게시판</a></li>
+            <li><a href="/Community/Art">메이플 아트</a></li>
+            
+            <li><a href="/Community/N23Coordination">메이플 코디</a></li>
+            <li><a href="/Community/CommunityArchive">커뮤니티 아카이브</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="/Media/N23VideoMusic/C1">미디어</a>
+        <ul>            
+            <li><a href="/Media/N23VideoMusic/C1">영상</a></li>
+            <li><a href="/Media/N23VideoMusic/C2">음악</a></li>
+            <li><a href="/Media/ArtWork">아트웍</a></li>
+            <li><a href="/Media/WebToon">웹툰</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="/Support/BugReport">고객지원</a>
+        <ul>
+                <li><a href="javascript:void(0);" onclick="window.open('https://cs.nexon.com/HelpBoard/Nexon?gamecode=18', '메이플스토리 고객센터', 'toolbar=no, scrollbars=yes, width=1024, height=800'); return false;">도움말/1:1문의<span class="icon_window"></span></a></li>
+                <li><a href="/Support/BugReport">버그악용/불법프로그램 신고</a></li>
+        </ul>
+    </li>
+</ul>
+    </div>
+</div>
+<div class="top_menu_bg">
+    <div class="div_inner" style="background:url('https://ssl.nexon.com/s2/game/maplestory/renewal/common/top_menu_line.png') left top no-repeat;"></div>
+</div>
+
+
+
+
+
+<div class="main_banner_wrap">
+    <ul class="main_banner">
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="https://maplestory.nexon.com/Promotion/event/2023/20230405/intro/2nd" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0509/main_bn_230509_63528725EB4B09D4.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="https://maplestory.nexon.com/Promotion/event/2023/20230405/intro/2nd" target="_blank">
+                            <h2>2023 SUMMER<br>SHOWCASE</h2>
+                                <p></p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="https://maplestory.nexon.com/promotion/event/2023/20230405/intro/1st" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_3TTV4NSOUBF57S62.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="https://maplestory.nexon.com/promotion/event/2023/20230405/intro/1st" target="_blank">
+                            <h2>메이프릴 아일랜드</h2>
+                                <p>2023년 4월 20일(목) 점검 후 ~ 6월 7일(수) 오후 11시 59분</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="/News/Event/Ongoing/751" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_4EP1VD1GY7BV5V68.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="/News/Event/Ongoing/751" target="_blank">
+                            <h2>메이프릴 위시 오브</h2>
+                                <p>2023년 4월 20일(목) 점검 후 ~ 6월 7일(수) 오후 11시 59분</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="/News/Event/Ongoing/764" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0518/main_bn_230518_IN0WO01R84KM1IBA.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="/News/Event/Ongoing/764" target="_blank">
+                            <h2>메이프릴 어드벤처<br>프로즌 블래스트</h2>
+                                <p>2023년 5월 18일(목) 점검 후 ~ 6월 7일(수) 오후 11시 59분</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="/News/Event/Ongoing/762" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0518/230518_main_DCDA7AFB0556E1A8.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="/News/Event/Ongoing/762" target="_blank">
+                            <h2>메이프릴<br>피에스타 UP!</h2>
+                                <p>2023년 5월 18일(목) 점검 후 ~ 6월 7일(수) 오후 11시 59분</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="/News/Event/Ongoing/763" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0518/main_bn_230518_8CE7CA4AA72CD3E7.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="/News/Event/Ongoing/763" target="_blank">
+                            <h2>메이프릴 챌린저스<br>모멘트리 키친</h2>
+                                <p>2023년 5월 18일(목) 점검 후 ~ 6월 7일(수) 오후 11시 59분</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="/News/Event/Ongoing/761" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0518/main_bn_230518_0A26BBEFB6F2DCB4.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="/News/Event/Ongoing/761" target="_blank">
+                            <h2>메이프릴<br>익스프레스</h2>
+                                <p>2023년 5월 18일(목) 점검 후 ~ 6월 7일(수) 오후 11시 59분</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="/News/Event/Ongoing/749" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_1704D1DF270C9A02.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="/News/Event/Ongoing/749" target="_blank">
+                            <h2>메이프릴 메모리아</h2>
+                                <p>2023년 4월 20일(목) 점검 후 ~ 6월 7일(수) 오후 11시 59분</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="/News/Event/Ongoing/744" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_417F3749AE1D53C1.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="/News/Event/Ongoing/744" target="_blank">
+                            <h2>메이프릴 리프샵</h2>
+                                <p>2023년 4월 20일(목) 점검 후 ~ 6월 11일(일) 오후 11시 59분</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="/News/Event/Ongoing/743" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_6AB1B086CC3D8449.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="/News/Event/Ongoing/743" target="_blank">
+                            <h2>메이프릴 스타샵</h2>
+                                <p>2023년 4월 20일(목) 점검 후 ~ 6월 11일(일) 오후 11시 59분</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="/News/Event/Ongoing/742" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_86VBL856QD7ML3G3.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="/News/Event/Ongoing/742" target="_blank">
+                            <h2>메이프릴 캔디샵</h2>
+                                <p>2023년 4월 20일(목) 점검 후 ~ 6월 11일(일) 오후 11시 59분</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="/News/Event/Ongoing/741" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_458I0030OKI3R6G0.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="/News/Event/Ongoing/741" target="_blank">
+                            <h2>테라버닝<br>부스터를 드려요!</h2>
+                                <p>2023년 4월 20일(목) 점검 후 ~ 6월 7일(수) 오후 11시 59분</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="/News/Event/Ongoing/728" target="_self"><img src="https://lwi.nexon.com/maplestory/banner/2023/0302/main_bn_230302_E6O0IJ153D03M3D1.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="/News/Event/Ongoing/728" target="_self">
+                            <h2>페어리 브로의<br>황금마차</h2>
+                                <p>2023년 3월 2일(목) 오전 10시 ~ 6월 14일(수) 오후 11시 59분</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="/News/Event/Ongoing/740" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_98BB06158B7F4E53.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="/News/Event/Ongoing/740" target="_blank">
+                            <h2>프리미엄PC방<br>접속 보상 이벤트</h2>
+                                <p>2023년 4월 21일(금) 오전 0시 ~ 6월 8일(목) 오후 11시 59분</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="https://blog.maplestory.nexon.com/" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2022/0113/main_bn_220113_7C33P42WS640P057.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="https://blog.maplestory.nexon.com/" target="_blank">
+                            <h2></h2>
+                                <p></p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="http://forum.nexon.com/maplepedia" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2022/0831/main_bn_220831_9BB933AC125F8910.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="http://forum.nexon.com/maplepedia" target="_blank">
+                            <h2></h2>
+                                <p></p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="https://e.kakao.com/t/maple-friends-are-always-cute" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2022/1219/main_bn_221219_A2BB59DD662FA7D9.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="https://e.kakao.com/t/maple-friends-are-always-cute" target="_blank">
+                            <h2>매일매일 귀여운 메이플 친구들!<br>카카오톡 이모티콘에서 만나요~</h2>
+                                <p></p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="banner_img_con">
+                        <div class="banner_img_wrap">
+                            <a href="https://card.nexon.com/Event/burning2304?eventCode=NXN1T&amp;utm_source=pcgame&amp;utm_medium=pc2maplestory&amp;utm_campaign=nxhd2023&amp;utm_term=none&amp;utm_content=common_banner9" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0525/main_bn_230525_54CE2825D524C5B1.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="div_inner main_banner_size">
+                        <a href="https://card.nexon.com/Event/burning2304?eventCode=NXN1T&amp;utm_source=pcgame&amp;utm_medium=pc2maplestory&amp;utm_campaign=nxhd2023&amp;utm_term=none&amp;utm_content=common_banner9" target="_blank">
+                            <h2>최대 35만원 상당의<br>넥슨캐시 얻기!</h2>
+                                <p>지금 넥슨캐시 얻는 꿀팁</p>
+                        </a>
+                    </div>
+                </li>
+    </ul>
+</div>
+
+<!-- pos_banner_wrap str -->
+<div class="pos_banner_wrap">
+    <!-- div_inner str -->
+    <div class="div_inner">
+        <span class="prev_btn"><a href="#a" onclick="prev_btn()"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/prev.png" alt="" /></a></span>
+        <div class="pos_banner">
+            <div class="pos_move">
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(0)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0509/main_bn_230509_thumb_63528725EB4B09D4.jpg" style="width:100px;height:40px;" alt="" /><span class=pos_line></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(0)">2023 SUMMER<br>SHOWCASE</a></dd>
+                        <dd class="pos_on"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(1)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_3TTV4NSOUBF57S62_thumb.jpg" style="width:100px;height:40px;" alt="" /><span ></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(1)">메이프릴 아일랜드</a></dd>
+                        <dd class="pos_off"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(2)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_thumb_4EP1VD1GY7BV5V68.jpg" style="width:100px;height:40px;" alt="" /><span ></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(2)">메이프릴 위시 오브</a></dd>
+                        <dd class="pos_off"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(3)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0518/main_bn_230518_IN0WO01R84KM1IBA_thumb.jpg" style="width:100px;height:40px;" alt="" /><span ></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(3)">메이프릴 어드벤처<br>프로즌 블래스트</a></dd>
+                        <dd class="pos_off"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(4)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0518/230518_sub_8BFD866240F3A39A.jpg" style="width:100px;height:40px;" alt="" /><span class=pos_line></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(4)">메이프릴<br>피에스타 UP!</a></dd>
+                        <dd class="pos_on"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(5)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0518/sub_bn_230518_8CE7CA4AA72CD3E7.jpg" style="width:100px;height:40px;" alt="" /><span ></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(5)">메이프릴 챌린저스<br>모멘트리 키친</a></dd>
+                        <dd class="pos_off"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(6)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0518/230518_thumb_0A26BBEFB6F2DCB4.jpg" style="width:100px;height:40px;" alt="" /><span ></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(6)">메이프릴<br>익스프레스</a></dd>
+                        <dd class="pos_off"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(7)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_thumb_1704D1DF270C9A02.jpg" style="width:100px;height:40px;" alt="" /><span ></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(7)">메이프릴 메모리아</a></dd>
+                        <dd class="pos_off"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(8)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_thumb_417F3749AE1D53C1.jpg" style="width:100px;height:40px;" alt="" /><span class=pos_line></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(8)">메이프릴 리프샵</a></dd>
+                        <dd class="pos_on"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(9)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_thumb_6AB1B086CC3D8449.jpg" style="width:100px;height:40px;" alt="" /><span ></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(9)">메이프릴 스타샵</a></dd>
+                        <dd class="pos_off"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(10)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_thumb_86VBL856QD7ML3G3.jpg" style="width:100px;height:40px;" alt="" /><span ></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(10)">메이프릴 캔디샵</a></dd>
+                        <dd class="pos_off"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(11)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_thumb_458I0030OKI3R6G0.jpg" style="width:100px;height:40px;" alt="" /><span ></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(11)">테라버닝<br>부스터를 드려요!</a></dd>
+                        <dd class="pos_off"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(12)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0302/main_bn_230302_E6O0IJ153D03M3D1_thumb.jpg" style="width:100px;height:40px;" alt="" /><span class=pos_line></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(12)">페어리 브로의<br>황금마차</a></dd>
+                        <dd class="pos_on"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(13)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/main_bn_230420_thumb_98BB06158B7F4E53.jpg" style="width:100px;height:40px;" alt="" /><span ></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(13)">프리미엄PC방<br>접속 보상 이벤트</a></dd>
+                        <dd class="pos_off"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(14)"><img src="https://lwi.nexon.com/maplestory/banner/2022/0113/main_bn_220113_7C33P42WS640P057_thumb.jpg" style="width:100px;height:40px;" alt="" /><span ></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(14)"></a></dd>
+                        <dd class="pos_off"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(15)"><img src="https://lwi.nexon.com/maplestory/banner/2022/0831/220831_9BB933AC125F8910_sub.jpg" style="width:100px;height:40px;" alt="" /><span ></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(15)"></a></dd>
+                        <dd class="pos_off"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(16)"><img src="https://lwi.nexon.com/maplestory/banner/2022/1219/main_bn_221125_A2BB59DD662FA7D9_thumb.jpg" style="width:100px;height:40px;" alt="" /><span class=pos_line></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(16)">매일매일 귀여운 메이플 친구들!<br>카카오톡 이모티콘에서 만나요~</a></dd>
+                        <dd class="pos_on"></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#a" onclick="pos_click(17)"><img src="https://lwi.nexon.com/maplestory/banner/2023/0525/thum_bn_230525_54CE2825D524C5B1.jpg" style="width:100px;height:40px;" alt="" /><span ></span></a></dt>
+                        <dd><a href="#a" onclick="pos_click(17)">최대 35만원 상당의<br>넥슨캐시 얻기!</a></dd>
+                        <dd class="pos_off"></dd>
+                    </dl>
+            </div>
+        </div>
+        <span class="next_btn"><a href="#a" onclick="next_btn()"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/next.png" alt="" /></a></span>
+        <div class="pos_count">
+            <dl>
+                <dt>01</dt>
+                <dd class="pos_len"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/slice.png" alt="" />18</dd>
+                <dd class="event_view_all"><a href="#a" onclick="event_onoff()"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/window.png" alt="" /></a></dd>
+            </dl>
+        </div>
+    </div>
+    <!-- div_inner end -->
+</div>
+<!-- pos_banner_wrap end -->
+
+<div class="event_all">
+    <!-- event_all_inner str -->
+    <div class="event_all_inner">
+        <h1 class="event_title"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/event_title.png" alt=""></h1>
+        <div class="event_all_bannerwrap">
+            <!--<div class="event_all_move"> slide에서만 필요함-->
+
+            <ul class="event_all_banner">
+                            <li>
+                                <a href="/News/Event/Ongoing/764"><img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5701596878173380155" alt=""></a>
+                                <dl>
+                                    <dt><a href="/News/Event/764">메이프릴 어드벤처 - 프로즌 블래스트</a></dt>
+                                    <dd><a href="/News/Event/764">2023.05.18 (목) ~ 2023.06.07 (수) 오후 11시59분</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="/News/Event/Ongoing/763"><img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4620733006259165188" alt=""></a>
+                                <dl>
+                                    <dt><a href="/News/Event/763">메이프릴 챌린저스 - 모멘트리 키친</a></dt>
+                                    <dd><a href="/News/Event/763">2023.05.18 (목) ~ 2023.06.07 (수) 오후 11시59분</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="/News/Event/Ongoing/762"><img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5413366519201536681" alt=""></a>
+                                <dl>
+                                    <dt><a href="/News/Event/762">메이프릴 피에스타 UP!</a></dt>
+                                    <dd><a href="/News/Event/762">2023.05.18 (목) ~ 2023.06.07 (수) 오후 11시59분</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="/News/Event/Ongoing/761"><img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5485424091764626946" alt=""></a>
+                                <dl>
+                                    <dt><a href="/News/Event/761">메이프릴 익스프레스</a></dt>
+                                    <dd><a href="/News/Event/761">2023.05.18 (목) ~ 2023.06.07 (수) 오후 11시59분</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="/News/Event/Ongoing/752"><img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5125136147344791035" alt=""></a>
+                                <dl>
+                                    <dt><a href="/News/Event/752">메이프릴 아일랜드</a></dt>
+                                    <dd><a href="/News/Event/752">2023.04.20 (목) ~ 2023.06.07 (수) 오후 11시59분</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="/News/Event/Ongoing/751"><img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5053078540421961405" alt=""></a>
+                                <dl>
+                                    <dt><a href="/News/Event/751">메이프릴 위시 오브</a></dt>
+                                    <dd><a href="/News/Event/751">2023.04.20 (목) ~ 2023.06.07 (수) 오후 11시59분</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="/News/Event/Ongoing/749"><img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4764848104140707158" alt=""></a>
+                                <dl>
+                                    <dt><a href="/News/Event/749">(수정) 메이프릴 메모리아</a></dt>
+                                    <dd><a href="/News/Event/749">2023.04.20 (목) ~ 2023.06.07 (수) 오후 11시59분</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="/News/Event/Ongoing/744"><img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5053078527537060859" alt=""></a>
+                                <dl>
+                                    <dt><a href="/News/Event/744">(수정)메이프릴 리프샵</a></dt>
+                                    <dd><a href="/News/Event/744">2023.04.20 (목) ~ 2023.06.11 (일) 오후 11시59분</a></dd>
+                                </dl>
+                            </li>
+            </ul>
+            <ul class="event_all_banner">
+                            <li>
+                                <a href="/News/Event/Ongoing/743"><img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4620732971899425758" alt=""></a>
+                                <dl>
+                                    <dt><a href="/News/Event/743">(수정)메이프릴 스타샵</a></dt>
+                                    <dd><a href="/News/Event/743">2023.04.20 (목) ~ 2023.06.11 (일) 오후 11시59분</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="/News/Event/Ongoing/742"><img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=4692790578822257119" alt=""></a>
+                                <dl>
+                                    <dt><a href="/News/Event/742">메이프릴 캔디샵</a></dt>
+                                    <dd><a href="/News/Event/742">2023.04.20 (목) ~ 2023.06.11 (일) 오후 11시59분</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="/News/Event/Ongoing/741"><img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5197193685548143719" alt=""></a>
+                                <dl>
+                                    <dt><a href="/News/Event/741">테라버닝 부스터를 드려요!</a></dt>
+                                    <dd><a href="/News/Event/741">2023.04.20 (목) ~ 2023.06.07 (수) 오후 11시59분</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="/News/Event/Ongoing/740"><img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5125136027085705019" alt=""></a>
+                                <dl>
+                                    <dt><a href="/News/Event/740">프리미엄PC방 접속 보상 이벤트</a></dt>
+                                    <dd><a href="/News/Event/740">2023.04.21 (금) ~ 2023.06.08 (목) 오후 11시59분</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <a href="/News/Event/Ongoing/728"><img src="https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5197193621123632596" alt=""></a>
+                                <dl>
+                                    <dt><a href="/News/Event/728">페어리 브로의 황금마차</a></dt>
+                                    <dd><a href="/News/Event/728">2023.03.02 (목) ~ 2023.06.14 (수) 오후 11시59분</a></dd>
+                                </dl>
+                            </li>
+                        <li>
+                            <img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/zzzzzzzz.png" alt="">
+                            <dl>
+                                <dt></dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/zzzzzzzz.png" alt="">
+                            <dl>
+                                <dt></dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/zzzzzzzz.png" alt="">
+                            <dl>
+                                <dt></dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+            </ul>
+            <!--</div>-->
+        </div>
+        <ul class="event_all_pos">
+                    <li><a href="#a" onmouseover="img_on(this)" onmouseout="img_out(this)" class=active><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/pos_event_on.png" alt="" ></a></li>
+                    <li><a href="#a" onmouseover="img_on(this)" onmouseout="img_out(this)" ><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/pos_event_off.png" alt="" ></a></li>
+
+        </ul>
+        <span class="event_close"><a href="#a" onclick="event_onoff()"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/event_close.png" alt=""></a></span>
+    </div>
+    <!-- event_all_inner end -->
+</div>
+
+
+        </div>
+        <div id="section02">
+            <div class="div_inner">
+<div class="rolling_event_wrap">
+        <dl>
+            <dt><a href="/News/Update/InformationCenter/106" target="_blank"><img src="https://lwi.nexon.com/maplestory/banner/2023/0517/bn_update_230517_536829B05F37B0F6.png" alt="" /></a></dt>
+            <dd class="rolling_title"><a href="/News/Update/InformationCenter/106" target="_blank">업데이트 정보센터</a></dd>
+            <dd class="rolling_text"><a href="/News/Update/InformationCenter/106" target="_blank">2023.5.18 / ver.1.2.377 업데이트 미리보기</a></dd>
+        </dl>
+</div>
+
+
+
+<span class="game_start">
+    <div class="gm_str_main_wrap">
+        
+
+                    <a href="javascript:void(0)" onclick="alert('로그인 후 메이플ID 생성이 필요합니다.')"><img class="main_str_btn" src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/mp_start_btn_main.png" alt="" /></a>
+
+
+    </div>
+        <span class="download"><a href="/Common/PDS/Download" target="_blank"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/main_game_down.png" alt="" /></a></span>
+</span>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $('#eid, #epw').bind('keydown', function (e) {
+            UTILITY.onEnterKeyDown(e.currentTarget, LOGIN.loginEmail);
+        });
+        $('.nexon_login_button a').bind('click', function (e) {
+            e.preventDefault();
+            LOGIN.loginEmail();
+        });
+        $('#mid, #mpw').bind('keydown', function (e) {
+            UTILITY.onEnterKeyDown(e.currentTarget, LOGIN.loginMaple);
+        });
+        $('.maple_login_button a').bind('click', function (e) {
+            e.preventDefault();
+            LOGIN.loginMaple();
+        });
+        $('.email_login .login_info a:eq(1)').bind('click', function (e) {
+            e.preventDefault();
+            NgbMember.SearchNexonID(136, '');
+        });
+        $('.tpa_login a:eq(0)').bind('click', function (e) {
+            e.preventDefault();
+            NgbLogin.LoginFacebook();
+        });
+        $('.tpa_login a:eq(1)').bind('click', function (e) {
+            e.preventDefault();
+            NgbLogin.LoginGoogle();
+        });
+        $('.tpa_login a:eq(2)').bind('click', function (e) {
+            e.preventDefault();
+            NgbLogin.LoginNaver();
+        });
+        $('.tpa_login a:eq(3)').bind('click', function (e) {
+            e.preventDefault();
+            NgbLogin.LoginApple();
+        });
+    });
+
+    function QRLOGIN() {
+        window.location = "https://nxlogin.nexon.com/common/login.aspx?sec=qr&redirect=" + document.URL;
+    }
+</script>
+
+<!--로그인 형태 선택 창 넥슨 이메일 or 메이플게임 id : Str-->
+<div class="login">
+    <span><a href="/Authentication/Login"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/login.png" alt="" /></a></span>
+    <span><a href="/Authentication/Login?t=2"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/login2.png" alt="" /></a></span>
+    
+    <button type="button" class="btn_qr" onclick="QRLOGIN()"><img src="https://lwi.nexon.com/maplestory/common/login/btn_qr.png" alt="QR 로그인"></button>
+    <div class="tpa_login">
+        <ul>
+            <li><a href="#a"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/tpa_menu01.png" alt="페이스북"></a></li>
+            <li><a href="#a"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/tpa_menu02.png" alt="구글"></a></li>
+            <li><a href="#a"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/tpa_menu03.png" alt="네이버"></a></li>
+            <li><a href="#a"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/tpa_menu04.png" alt="애플"></a></li>
+        </ul>
+   </div>
+    <span class="join_member"><a href="https://member.nexon.com/join/join.aspx?accesscode=136" target="_blank"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/join_member_new.png" alt="회원가입" /></a></span>
+    <span class="join_member2"><a href="https://trans.nexon.com/trans/transemailid.aspx" target="_blank"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/id_chg_btn.png" alt="이메일 ID전환" /></a></span>
+</div>
+<!--로그인 형태 선택 창 넥슨 이메일 or 메이플게임 id : End-->
+<div class="change_id" style="display:none;">
+    <div class="email_login">
+        <span class="change_id_button">
+            <a href="javascript:void(0)" onclick="change_id(1)"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/change_maple.png" alt="" /></a>
+        </span>
+        <div class="idpw_wrap">
+            <ul class="idpw">
+                <li>
+                    <input type="text" id="eid" />
+                    <img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/placeholder_nexon.png" class="placeholder" alt="" />
+                </li>
+                <li>
+                    <input type="password" style="margin-top:1px;" id="epw" />
+                    <img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/pw.png" class="placeholder" alt="" />
+                </li>
+            </ul>
+            <div class="save_id_wrap">
+                <div class="checkbox_custom">
+                    <span class="save_check_bg">
+                        <a href="javascript:void(0)" onclick="check_box(this)"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/save_id_check.png" alt=""></a>
+                    </span>
+                    <span class="save_id_font"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/save_id.png" alt=""></span>
+                    <input type="checkbox">
+                </div>
+            </div>
+        </div>
+        <span class="nexon_login_button"><a href="#a">로그인</a></span>
+        <div class="login_info">
+            <span><a href="https://member.nexon.com/join/join.aspx?accesscode=136" target="_blank"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/join_member.png" alt=""></a></span>
+            <span><a href="#a"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/id_password.png" alt=""></a></span>
+        </div>
+    </div>
+    <div class="gameid_login">
+        <span class="change_id_button">
+            <a href="javascript:void(0)" onclick="change_id(0)"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/change_nexon.png" alt="" /></a>
+        </span>
+        <form id="frmLoginMaple" method="post" action="/Authentication/Login">
+            <input type="hidden" name="RedirectTo" value="/Home/Main" />
+            <div class="idpw_wrap">
+                <ul class="idpw">
+                    <li>
+                        <input type="text" id="mid" name="ID" />
+                        <img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/placeholder_maple.png" class="placeholder" alt="" />
+                    </li>
+                    <li>
+                        <input type="password" style="margin-top:1px;" id="mpw" name="Password" />
+                        <img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/pw.png" class="placeholder" alt="" />
+                    </li>
+                </ul>
+                <div class="save_id_wrap">
+                    <div class="checkbox_custom">
+                        <span class="save_check_bg">
+                            <a href="javascript:void(0)" onclick="check_box(this)"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/save_id_check.png" alt=""></a>
+                        </span>
+                        <span class="save_id_font"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/save_id.png" alt=""></span>
+                        <input type="checkbox">
+                    </div>
+                </div>
+            </div>
+            <span class="maple_login_button"><a href="#a">로그인</a></span>
+            <div class="login_info">
+                <span><a href="/Account/Join"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/join_member.png" alt=""></a></span>
+                <span><a href="https://trans.nexon.com/trans/transemailid.aspx" target="_blank"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/email_change.png" alt=""></a></span>
+                <span><a href="/Account/Search/ID"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/id_password.png" alt=""></a></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+            </div>
+        </div>
+<div class="after_info_lurking">
+<div class="notice_banner_wrap">
+    
+</div>
+
+<div class="lv_info">
+    <span class="lv_line"></span>
+    <div class="div_inner">
+        <dl class="char_lv_info">
+            <dt><img src="" alt=""></dt>
+            <dd class="char_id">님</dd>
+            <dd class="lv_info_font">레벨 정보</dd>
+        </dl>
+        <div class="maple_id_info">
+            <dl>
+                <dt class="level_font">LEVEL</dt>
+                <dd class="level"></dd>
+            </dl>
+
+            <dl>
+                <dt>종합랭킹</dt>
+                <dd >
+                    <img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/line.png" alt="">
+                </dd>
+                <dd class="ranking_numb">0위</dd>
+            </dl>
+            <dl>
+                <dt>월드랭킹</dt>
+                <dd >
+                    <img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/line.png" alt="">
+                </dd>
+                <dd class="ranking_numb">0위</dd>
+            </dl>
+            <dl>
+                <dt>직업랭킹</dt>
+                <dd >
+                    <img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/line.png" alt="">
+                </dd>
+                <dd class="ranking_numb">0위</dd>
+            </dl>
+            <dl>
+                <dt>인기도랭킹</dt>
+                <dd >
+                    <img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/line.png" alt="">
+                </dd>
+                <dd class="ranking_numb">0위</dd>
+            </dl>
+            
+            <dl>
+                <dt>유니온랭킹</dt>
+                <dd >
+                    <img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/line.png" alt="">
+                </dd>
+                <dd class="ranking_numb">0위</dd>
+            </dl>
+            <dl>
+                <dt>업적랭킹</dt>
+                <dd >
+                    <img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/line.png" alt="">
+                </dd>
+                <dd class="ranking_numb">0위</dd>
+            </dl>
+        </div>
+        <span class="lv_close"><a href="javascript:void(0)" onclick="lv_close()"><img src="https://ssl.nexon.com/s2/game/maplestory/renewal/common/lv_close.png" alt=""></a></span>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+        <!-- section03 str -->
+        <div id="main_board_sec">
+            <div class="div_inner">
+                <!--메인 캐시 배너-->
+                <div class="main_cash_bn">
+                    <ul class="main_cash_con">
+                            <li><a href="/News/CashShop/Sale/382" target="_self"><img src="https://lwi.nexon.com/maplestory/banner/2023/0518/cashshop_bn_230518_6B34B06B6822A8A2.jpg" alt="" /></a></li>
+                            <li><a href="/News/CashShop/Sale/381" target="_self"><img src="https://lwi.nexon.com/maplestory/banner/2023/0518/cashshop_bn_reboot_230518_ACC8B5FC2C11A26A.jpg" alt="" /></a></li>
+                            <li><a href="/News/CashShop/Sale/380" target="_self"><img src="https://lwi.nexon.com/maplestory/banner/2023/0511/cashshop_bn_230511_51A62D07B805A9FB.jpg" alt="" /></a></li>
+                            <li><a href="/News/CashShop/Sale/376" target="_self"><img src="https://lwi.nexon.com/maplestory/banner/2023/0427/cashshop_bn_230427.jpg" alt="" /></a></li>
+                            <li><a href="/News/CashShop/Sale/375" target="_self"><img src="https://lwi.nexon.com/maplestory/banner/2023/0427/cashshop_bn_230427_8QFS5323NAWQ3MMT.jpg" alt="" /></a></li>
+                            <li><a href="/News/CashShop/Sale/355" target="_self"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/cashshop_bn_230223_5B45D0576E6314DD.png" alt="" /></a></li>
+                            <li><a href="/News/CashShop/Sale/209" target="_self"><img src="https://lwi.nexon.com/maplestory/banner/2023/0420/cashshop_bn_7375DA8E17953C0D.jpg" alt="" /></a></li>
+                    </ul>
+                    <div class="main_dot_wrap">
+                        <ul>
+                                <li class="active"><a href="#a" onclick="m_pos_cash_bn(0)">1</a></li>
+                                <li class=""><a href="#a" onclick="m_pos_cash_bn(1)">2</a></li>
+                                <li class=""><a href="#a" onclick="m_pos_cash_bn(2)">3</a></li>
+                                <li class=""><a href="#a" onclick="m_pos_cash_bn(3)">4</a></li>
+                                <li class=""><a href="#a" onclick="m_pos_cash_bn(4)">5</a></li>
+                                <li class=""><a href="#a" onclick="m_pos_cash_bn(5)">6</a></li>
+                                <li class=""><a href="#a" onclick="m_pos_cash_bn(6)">7</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--공지 리스트-->
+                <div class="main_update_info">
+                    <dl>
+                        
+
+                            <dt class="">공지</dt>
+                            <dd>
+                                <a href="/board/7/141146" target="_self">5/26(금) 운영정책위반 단속결과</a>
+                            </dd>
+                            <dd class="txt">총 2,831개 계정이 단속 되었습니다.</dd>
+                    </dl>
+                </div>
+                <div class="client_update_wrap2">
+                    
+                    <div class="client_update2">
+                        <ul>
+
+
+                                        <li class="">
+                                            <dl>
+                                                <dt class="">공지</dt>
+                                                <dd class="title">
+                                                    <a href="/board/7/140820" target="_self">메이플스토리 홈페이지 개편 안내</a>
+                                                </dd>
+                                                <dd class="info">홈페이지 개편 내용을 확인해보세요!</dd>
+                                            </dl>
+                                        </li>
+                                        <li class="">
+                                            <dl>
+                                                <dt class="">공지</dt>
+                                                <dd class="title">
+                                                    <a href="/board/7/141032" target="_self">5/12(금) 버그/불법프로그램 신고보상 안내</a>
+                                                </dd>
+                                                <dd class="info">버그악용/불법프로그램 신고 보상 내용을 확인해주세요.</dd>
+                                            </dl>
+                                        </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section03 end -->
+        <!--메인 바로 가기 모음-->
+        <div id="main_con_line">
+            <div class="div_inner">
+                <ul class="main_btn_wrap">
+                    <li><a href="https://play.google.com/store/apps/details?id=com.nexon.handsplus" onmouseover="ch_png_on(this)" onmouseout="ch_png_off(this)" target="_blank"><img src="https://lwi.nexon.com/maplestory/main/main_btn01_off.png" alt=""></a></li>
+                    <li><a href="https://itunes.apple.com/kr/app/id1054905770" onmouseover="ch_png_on(this)" onmouseout="ch_png_off(this)" target="_blank"><img src="https://lwi.nexon.com/maplestory/main/main_btn02_off.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/MapleStoryKR" onmouseover="ch_png_on(this)" onmouseout="ch_png_off(this)" target="_blank"><img src="https://lwi.nexon.com/maplestory/main/main_btn03_off.png" alt=""></a></li>
+                    <li><a href="https://twitter.com/MapleStory_KR" onmouseover="ch_png_on(this)" onmouseout="ch_png_off(this)" target="_blank"><img src="https://lwi.nexon.com/maplestory/main/main_btn04_off.png" alt=""></a></li>
+                    <li><a href="http://www.youtube.com/user/maplestorymaplestyle" onmouseover="ch_png_on(this)" onmouseout="ch_png_off(this)" target="_blank"><img src="https://lwi.nexon.com/maplestory/main/main_btn05_off.png" alt=""></a></li>
+                    <li><a href="https://forum.nexon.com/maplepedia" onmouseover="ch_png_on(this)" onmouseout="ch_png_off(this)" target="_blank"><img src="https://lwi.nexon.com/maplestory/main/main_btn06_off.png" alt=""></a></li>
+                    <li><a href="/Testworld/Main" onmouseover="ch_png_on(this)" onmouseout="ch_png_off(this)"><img src="https://lwi.nexon.com/maplestory/main/main_btn07_off.png" alt=""></a></li>
+                    <li><a href="/Support/BugReport" onmouseover="ch_png_on(this)" onmouseout="ch_png_off(this)"><img src="https://lwi.nexon.com/maplestory/main/main_btn08_off.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--#section05 유튜브 Str-->
+        <div id="main_game_info">
+            <div class="div_inner">
+                <h1 class="main_title">메이플스토리 <br />게임정보</h1>
+                <span class="main_btn09"><a href="/Guide/N23GameInformation" onmouseover="ch_png_on(this)" onmouseout="ch_png_off(this)"><img src="https://lwi.nexon.com/maplestory/main/main_btn09_off.png" alt=""></a></span>
+                <!--파티 퀘스트 / 캐릭터 스킬 / 보안강화하기 바로가기-->
+                <ul class="main_gd_list">
+                    <li>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <a href="/Guide/N23GameInformation/377403"><img src="https://lwi.nexon.com/maplestory/main/main_img01.png" alt=""></a>
+                    </li>
+                    <li>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <a href="/Guide/N23GameInformation/377412"><img src="https://lwi.nexon.com/maplestory/main/main_img02.png" alt=""></a>
+                    </li>
+                    <li>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <a href="/Guide/N23GameInformation/377477"><img src="https://lwi.nexon.com/maplestory/main/main_img03.png" alt=""></a>
+                    </li>
+                </ul>
+                <div class="sns_mv_wrap">
+                    <!--Yt-->
+                    <div class="main_yt_list">
+                        <h1>Look at Maple!</h1>
+                        <p>내 캐릭터를 예쁘게 코디하고 싶다고요? 그런 용사님들을 위해 준비했습니다!</p>
+                        <span class="more"><a href="https://www.youtube.com/playlist?list=PLO8Uwi6jgA314aA1i9lPU9bB99Sa54j9W" onmouseover="ch_png_on(this)" onmouseout="ch_png_off(this)" target="_blank"><img src="https://lwi.nexon.com/maplestory/main/more_btn_off.png" alt=""></a></span>
+                        <ul>
+
+                                    <li>
+                                        <div class="main_sum_con">
+                                            <img src="https://img.youtube.com/vi/TA_tbS9TCmA/mqdefault.jpg" alt=""><span><img src="https://lwi.nexon.com/maplestory/main/sns_v_icon01.png" alt=""></span>
+                                            <em><a href="javascript:void(0);" onclick="open_look_pop('TA_tbS9TCmA');"><img src="https://lwi.nexon.com/maplestory/main/play_btn.png" alt=""></a></em>
+                                        </div>
+                                        <div class="main_sum_txt"><a href="javascript:void(0);" onclick="open_look_pop('TA_tbS9TCmA');">Look at Maple! [Ep.6 새싹 용사님들을 위한 코디 입문 편] | 2023 MapleStory</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="main_sum_con">
+                                            <img src="https://img.youtube.com/vi/fZVbzL1cVNA/mqdefault.jpg" alt=""><span><img src="https://lwi.nexon.com/maplestory/main/sns_v_icon01.png" alt=""></span>
+                                            <em><a href="javascript:void(0);" onclick="open_look_pop('fZVbzL1cVNA');"><img src="https://lwi.nexon.com/maplestory/main/play_btn.png" alt=""></a></em>
+                                        </div>
+                                        <div class="main_sum_txt"><a href="javascript:void(0);" onclick="open_look_pop('fZVbzL1cVNA');">Look at Maple! [Ep.5 블랙&amp;화이트 코디 편] | 2023 MapleStory</a></div>
+                                    </li>
+
+                        </ul>
+                    </div>
+
+                    <!--새싹-->
+                    <div class="new_sns_list">
+                        <h1>새싹용사 내비게이션</h1>
+                        <p>새싹 용사님들의 쑥쑥 성장가이드!</p>
+                        <span class="more"><a href="https://www.youtube.com/playlist?list=PLO8Uwi6jgA31kCksuYvAHVXvLdj5yeTim" onmouseover="ch_png_on(this)" onmouseout="ch_png_off(this)" target="_blank"><img src="https://lwi.nexon.com/maplestory/main/more_btn_off.png" alt=""></a></span>
+                        <ul>
+
+                                    <li>
+                                        <div class="main_sum_con">
+                                            <img src="https://img.youtube.com/vi/ogxIcECv_kU/mqdefault.jpg" alt=""><span><img src="https://lwi.nexon.com/maplestory/main/sns_v_icon02.png" alt=""></span>
+                                            <em><a href="javascript:void(0);" onclick="open_look_pop('ogxIcECv_kU');"><img src="https://lwi.nexon.com/maplestory/main/play_btn.png" alt=""></a></em>
+                                        </div>
+                                        <div class="main_sum_txt"><a href="javascript:void(0);" onclick="open_look_pop('ogxIcECv_kU');">GM노리의 새싹용사 내비게이션 [Ep.6] 아케인리버에서 살아남기! | 2023 MapleStory</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="main_sum_con">
+                                            <img src="https://img.youtube.com/vi/SDy5Y3i5A1c/mqdefault.jpg" alt=""><span><img src="https://lwi.nexon.com/maplestory/main/sns_v_icon02.png" alt=""></span>
+                                            <em><a href="javascript:void(0);" onclick="open_look_pop('SDy5Y3i5A1c');"><img src="https://lwi.nexon.com/maplestory/main/play_btn.png" alt=""></a></em>
+                                        </div>
+                                        <div class="main_sum_txt"><a href="javascript:void(0);" onclick="open_look_pop('SDy5Y3i5A1c');">GM노리의 새싹용사 내비게이션 [Ep.5] 5차 스킬과 V매트릭스 - 2부 | 2023 MapleStory</a></div>
+                                    </li>
+
+                        </ul>
+                    </div>
+                </div>
+           
